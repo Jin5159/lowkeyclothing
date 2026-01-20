@@ -1,0 +1,411 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #111;
+    background: #fff;
+}
+
+/* Utilities */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Header */
+
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 2rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+.navinfo {
+    width: 100%;
+    height: 3rem;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.navinfocontent {
+    font-weight: 300;
+    font-size:1rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-header {
+    
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+
+    color: black;
+    background-color: white;
+
+}
+
+.main-nav {
+    
+    margin-top: -3.2rem;
+    font-size: 1.1rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+.brandlogoparent {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    
+    
+}
+.brandlogo {
+    width: 15rem;
+    height: auto;
+    margin-top: -2.5rem;
+}
+
+
+.navcontainer {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+
+    
+
+}
+
+
+.main-nav a {
+    position: relative;
+    text-decoration: none;
+    color: #111;
+    padding: 0.5rem 0;
+}
+
+/* the line */
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;              /* distance from text */
+    width: 100%;
+    height: 0.125rem;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+/* hover state */
+.main-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tuffquote {
+    position: absolute;
+    top: 30rem;
+    left: 50%;           /* Move the left edge to the middle of the screen */
+    transform: translateX(-50%); /* Pull the element back by half its own width */
+    
+    color: rgb(255, 255, 255);
+    white-space: nowrap; /* Keeps the quote on one line if needed */
+    font-size: 2rem;
+    font-family: system-ui, sans-serif;
+}
+
+
+
+
+.bg1 {
+    height:auto;
+    width: 100%;
+
+
+}
+
+
+
+
+.blackhoodieimg, .whiteshirtimg, .whitehoodieimg {
+    width: 20rem;
+    height: auto;
+}
+.content {
+    padding: 3rem 0;
+}
+
+.productgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10rem;
+
+}
+
+.card {
+    border: 0.1rem solid white;
+}
+
+
+
+
+
+.content2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bg2img, .bg3img {
+    width: 50%;
+    height: 50rem;
+}
+
+
+
+
+
+
+
+.placeholder {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.morecoming {
+    font-size: 2rem;
+    max-width: 25rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+
+.boringstuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5rem;
+
+    font-size: 1.3rem;
+
+    margin-top: 7rem;
+
+
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.boringheader {
+    font-size: 1.8rem;
+}
+
+.boringstuff > div {
+    flex: 1; 
+    text-align: center;
+}
+
+.boringbuttons {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.cleanbutton {
+    /* 1. Remove the "Button" look */
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit; /* Inherits font size/family from parent */
+    cursor: pointer;
+    outline: inherit;
+
+    /* 2. Add your custom style (Example: underline) */
+    color: #111;
+}
+
+.cleanbutton:hover {
+    color: #5561c2;
+    text-decoration: none;
+}
+
+
+
+
+.fade {
+    opacity: 0;
+    transform: translateY(1.5625rem);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+.productgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10rem;
+
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .tuffquote {
+        font-size: 1.5rem;
+        margin-top: -13.4rem
+    }
+    .blackhoodieimg, .whiteshirtimg, .whitehoodieimg {
+        width: 5rem;
+        height: auto;
+
+    }
+    .productgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 0.15rem;
+    }
+    .cardline {
+        font-size: 1.2rem;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .content2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .bg2img, .bg3img {
+        width: 100%;
+        height: auto;
+    }
+
+    .boringstuff {
+        margin-top: 2.35rem;
+        width: 100%;
+        font-size: 0.9rem;
+        gap: 0.15rem;
+    }
+    .boringheader {
+        font-size: 1.3rem;
+    }
+    
+   
+
+    
+}
